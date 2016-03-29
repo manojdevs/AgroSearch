@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AgroSearch</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="search.html">Agrosearch</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="search.html">Search<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div style="padding-left:300px;">
+<img src="http://www.indiawaterportal.org/sites/indiawaterportal.org/files/KSY.jpg" style="width:698px;height:200px;"/>
+</div>
+<div style="position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -400px;">
+    <div class="input-group">
+    <form class="navbar-form navbar-right" method="GET">
+      <div class="form-group">
+          <input type="text" style="width: 700px;" class="form-control" placeholder="Search" name="sqry">
+        </div>
+        <button type="submit" class="btn btn-info" onclick="javascript: form.action='search.jsp';">Search</button>
+        <br><br><br>
+        <center>
+        <div>
+        <div class="radio" style="padding-right:60px;">
+      <label><input type="radio" name="optradio" checked="checked" value="google">Google</label>
+    </div>
+    <div class="radio" style="padding-right:60px;">
+      <label><input type="radio" name="optradio" value="bing">Bing</label>
+    </div>
+    <div class="radio" style="padding-right:60px;">
+      <label><input type="radio" name="optradio" value="yahoo">Yahoo</label>
+    </div>
+    <div class="radio" style="padding-right:60px;">
+      <label><input type="radio" name="optradio" value="meta">Meta Search</label>
+    </div>
+    <div class="radio" style="padding-right:60px;">
+      <label><input type="radio" name="optradio" value="doc">Doc Search</label>
+    </div>
+    </div>
+    </center>
+      </form>
+    </div><!-- /input-group -->
+ </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+</body>
+</html>
